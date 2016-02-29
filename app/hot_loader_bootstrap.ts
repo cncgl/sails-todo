@@ -1,4 +1,4 @@
-/// <reference path="../tools/typings/tsd/systemjs/systemjs.d.ts"/>
+/// <reference path="../typings/browser/ambient/systemjs/systemjs.d.ts"/>
 
 // Angular2 specified stuff
 import {provide} from 'angular2/core';
