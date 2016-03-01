@@ -36,10 +36,9 @@ exports.NPM_DEPENDENCIES = [
     { src: 'systemjs/dist/system.src.js', inject: 'shims', dest: exports.LIB_DEST },
     { src: 'angular2/bundles/angular2-polyfills.js', inject: 'shims', dest: exports.LIB_DEST },
     { src: 'rxjs/bundles/Rx.min.js', inject: 'libs', dest: exports.LIB_DEST },
-    { src: 'angular2/bundles/angular2.min.js', inject: 'libs', dest: exports.LIB_DEST },
+    { src: 'angular2/bundles/angular2.js', inject: 'libs', dest: exports.LIB_DEST },
     { src: 'angular2/bundles/router.js', inject: 'libs', dest: exports.LIB_DEST },
     { src: 'angular2/bundles/http.min.js', inject: 'libs', dest: exports.LIB_DEST },
-    { src: 'angular2-jwt/angular2-jwt.js', inject: 'libs', dest: exports.LIB_DEST },
     { src: 'bootstrap/dist/css/bootstrap.min.css', inject: true, dest: exports.CSS_DEST }
 ];
 exports.APP_ASSETS = [
