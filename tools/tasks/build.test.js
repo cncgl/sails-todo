@@ -11,7 +11,11 @@ module.exports = function buildTest(gulp, plugins) {
         var result = gulp.src(src)
             .pipe(plugins.plumber())
             .pipe(plugins.inlineNg2Template({ base: config_1.TEST_DEST }))
-            .pipe(plugins.typescript.filter(tsProject, { referencedFrom: ['../../node_modules/angular2/typings/browser.d.ts'] }));
+            .pipe(plugins.typescript(tsProject, {
+            referencedFrom: [
+                '../../node_modules/angular2/typings/browser.d.ts'
+            ]
+        }));
         return result.js
             .pipe(gulp.dest(config_1.TEST_DEST));
     };
