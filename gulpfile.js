@@ -21,7 +21,7 @@ gulp.task('build.test.watch', function (done) {
     return utils_1.runSequence('build.test', 'watch.test', done);
 });
 gulp.task('test', function (done) {
-    return utils_1.runSequence('clean.test', 'tslint', 'build.test', 'karma.start', done);
+    return utils_1.runSequence('clean.test', 'tslint', 'build.sass.test', 'build.assets.test', 'build.js.test', 'build.index', 'build.test', 'karma.start', done);
 });
 gulp.task('serve', function (done) {
     return utils_1.runSequence('build.dev', 'server.start', 'watch.serve', done);

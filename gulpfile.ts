@@ -1,3 +1,4 @@
+///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 import * as gulp from 'gulp';
 import {runSequence, task} from './tools/utils';
 
@@ -71,6 +72,10 @@ gulp.task('test', done =>
   runSequence(
     'clean.test',
     'tslint',
+    'build.sass.test',
+    'build.assets.test',
+    'build.js.test',
+    'build.index',
     'build.test',
     'karma.start',
     done

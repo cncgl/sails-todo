@@ -25,7 +25,7 @@ export const ASSETS_SRC           = `${APP_SRC}/assets`;
 
 export const TOOLS_DIR            = 'tools';
 export const TMP_DIR              = 'tmp';
-export const TEST_DEST            = 'test';
+export const TEST_DEST            = 'dist/test';
 export const DOCS_DEST            = 'docs';
 export const APP_DEST             = `dist/${ENV}`;
 export const ASSETS_DEST          = `${APP_DEST}/assets`;
