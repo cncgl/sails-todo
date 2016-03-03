@@ -5,7 +5,7 @@ module.exports = function karmaStart() {
         new karma.Server({
             configFile: path_1.join(process.cwd(), 'karma.conf.js'),
             singleRun: true
-        }).start(done);
+        }, done).start();
     };
 };
 //# sourceMappingURL=karma.start.js.map
