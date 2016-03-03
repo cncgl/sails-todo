@@ -7,7 +7,7 @@ export = function karmaStart() {
     new (<any>karma).Server({
       configFile: join(process.cwd(), 'karma.conf.js'),
       singleRun: true
-    }, done).start();
+    }, function() { done(); } ).start();
     /*
     new Server({
       configFile: join(process.cwd(), 'karma.conf.js'),
