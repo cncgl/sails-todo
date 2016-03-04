@@ -1,9 +1,9 @@
 {
-  "name": "angular-sailsjs-boilerplate-frontend-angular2",
+  "name": "sails-todo",
   "version": "0.0.0",
   "description": "Experimental Angular2 frontend implementation for [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)",
   "repository": {
-    "url": "https://github.com/tarlepp/angular-sailsjs-boilerplate-frontend-angular2"
+    "url": "https://github.com/cncgl/sails-todo"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
@@ -30,7 +30,7 @@
     "webdriver-update": "webdriver-manager update",
     "webdriver-start": "webdriver-manager start"
   },
-  "author": "Tarmo Leppänen <tarlepp>",
+  "author": "Shigeru Kondou <cncgl>",
   "license": "MIT",
   "devDependencies": {
     "angular2-hot-loader": "0.0.15",
@@ -88,7 +88,7 @@
     "yargs": "3.31.0"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.7",
+    "angular2": "^2.0.0-beta.8",
     "angular2-jwt": "0.1.7",
     "bootstrap": "3.3.5",
     "es6-module-loader": "0.17.10",

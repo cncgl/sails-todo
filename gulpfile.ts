@@ -1,8 +1,6 @@
 ///<reference path="node_modules/angular2/typings/browser.d.ts"/>
 import * as gulp from 'gulp';
 import {runSequence, task} from './tools/utils';
-// import { join } from 'path';
-// import { APP_SRC, APP_DEST, TOOLS_DIR } from './tools/config';
 
 // --------------
 // Clean (override).
@@ -81,14 +79,6 @@ gulp.task('test', done =>
     'karma.start',
     done
   ));
-
-/*
-gulp.task('karma.start', done =>
-  new (<any>karma).Server({
-    configFile: join(process.cwd(), 'karma.conf.js'),
-    singleRun: true
-  }, function() { done(); } ).start());
-*/
 
 // --------------
 // Serve.
